@@ -6,6 +6,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { AddTransactionForm } from '@/components/AddTransactionForm';
 import { TransactionList } from '@/components/TransactionList';
 import { DashboardStats } from '@/components/DashboardStats';
+import { AnalyticsCharts } from '@/components/AnalyticsCharts';
 import { LogOut, PlusCircle, List, BarChart3 } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
@@ -112,19 +113,15 @@ const Dashboard = () => {
           </TabsContent>
 
           <TabsContent value="analytics" className="mt-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Analytics</CardTitle>
-                <CardDescription>
-                  Visualize your spending patterns and financial trends
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+            <div>
+              <div className="mb-6">
+                <h2 className="text-2xl font-bold text-primary">Analytics</h2>
                 <p className="text-muted-foreground">
-                  Analytics charts will be implemented here with spending by category and monthly trends.
+                  Visualize your spending patterns and financial trends
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+              <AnalyticsCharts transactions={transactions} />
+            </div>
           </TabsContent>
         </Tabs>
       </main>
