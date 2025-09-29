@@ -137,18 +137,8 @@ Currently uses browser's localStorage for data persistence. Each user's data is 
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🔗 Deployment
-
-This project is built with Lovable and can be easily deployed:
-
-1. Visit your [Lovable Project](https://lovable.dev/projects/8bf4ed5a-a175-4b9d-8f1c-0b801947cb80)
-2. Click on Share → Publish
-3. Your app will be live with a custom URL
-
 ## 💡 Support
 
 If you have any questions or need help, feel free to open an issue or contact the development team.
-
----
 
 Built with ❤️ using React, TypeScript, and Tailwind CSS
