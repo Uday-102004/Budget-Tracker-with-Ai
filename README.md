@@ -1,73 +1,154 @@
-# Welcome to your Lovable project
+# Budget Tracker Web Application
 
-## Project info
+A modern, responsive budget tracking application built with React, TypeScript, and Tailwind CSS. Track your income and expenses with beautiful visualizations and detailed analytics.
 
-**URL**: https://lovable.dev/projects/8bf4ed5a-a175-4b9d-8f1c-0b801947cb80
+## ✨ Features
 
-## How can I edit this code?
+### 🏠 Landing Page
+- Clean, modern design with call-to-action buttons
+- Login and Register options
+- Responsive layout
 
-There are several ways of editing your application.
+### 🔐 Authentication
+- User registration with form validation
+- Secure login system
+- Persistent user sessions
 
-**Use Lovable**
+### 📊 Dashboard
+- **Add Transactions**: Record income and expenses with categories and dates
+- **Transaction History**: View all transactions in a searchable, sortable table
+- **Analytics Charts**: 
+  - Monthly spending trends
+  - Category-wise expense breakdown
+  - Income vs Expense comparison
+- **Financial Stats**: Quick overview of total income, expenses, and balance
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8bf4ed5a-a175-4b9d-8f1c-0b801947cb80) and start prompting.
+### 📈 Visual Analytics
+- Interactive charts using Recharts library
+- Month-wise financial trends
+- Category-based spending analysis
+- Responsive chart design
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technologies Used
 
-**Use your preferred IDE**
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Radix UI primitives with shadcn/ui
+- **Charts**: Recharts for data visualization
+- **Routing**: React Router DOM
+- **State Management**: React Context API
+- **Data Persistence**: LocalStorage (client-side)
+- **Icons**: Lucide React
+- **Build Tool**: Vite
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd budget-tracker
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📱 How to Use
 
-**Use GitHub Codespaces**
+1. **Register**: Create a new account with your name, email, and password
+2. **Login**: Access your dashboard with your credentials
+3. **Add Transactions**: 
+   - Switch to "Add Transaction" tab
+   - Select income or expense
+   - Enter amount, category, and date
+   - Add optional description
+4. **View History**: Check all your transactions in the "Transaction History" tab
+5. **Analyze Data**: View charts and trends in the "Analytics" tab
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # shadcn/ui components
+│   ├── AddTransactionForm.tsx
+│   ├── AnalyticsCharts.tsx
+│   ├── DashboardStats.tsx
+│   └── TransactionList.tsx
+├── contexts/            # React contexts
+│   └── AuthContext.tsx
+├── pages/               # Route components
+│   ├── Dashboard.tsx
+│   ├── Index.tsx
+│   ├── Login.tsx
+│   ├── Register.tsx
+│   └── NotFound.tsx
+├── lib/                 # Utility functions
+│   └── utils.ts
+└── App.tsx              # Main app component
+```
 
-This project is built with:
+## 🎨 Design System
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The application uses a carefully crafted design system with:
+- **Primary Colors**: Deep teal/blue for financial trust
+- **Success Colors**: Green for income indicators
+- **Destructive Colors**: Warm red for expenses
+- **Gradients**: Subtle background gradients
+- **Typography**: Clean, readable font hierarchy
+- **Components**: Consistent spacing and styling
 
-## How can I deploy this project?
+## 📊 Data Storage
 
-Simply open [Lovable](https://lovable.dev/projects/8bf4ed5a-a175-4b9d-8f1c-0b801947cb80) and click on Share -> Publish.
+Currently uses browser's localStorage for data persistence. Each user's data is stored separately using their user ID as a key.
 
-## Can I connect a custom domain to my Lovable project?
+## 🔮 Future Enhancements
 
-Yes, you can!
+- Backend integration with real database
+- Export data to CSV/PDF
+- Budget planning and alerts
+- Multi-currency support
+- Recurring transactions
+- Mobile app version
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🤝 Contributing
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🔗 Deployment
+
+This project is built with Lovable and can be easily deployed:
+
+1. Visit your [Lovable Project](https://lovable.dev/projects/8bf4ed5a-a175-4b9d-8f1c-0b801947cb80)
+2. Click on Share → Publish
+3. Your app will be live with a custom URL
+
+## 💡 Support
+
+If you have any questions or need help, feel free to open an issue or contact the development team.
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS
